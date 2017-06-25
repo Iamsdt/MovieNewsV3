@@ -4,7 +4,7 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.util.Log
-import com.blogspot.shudiptotrafder.movienewsv3.BuildConfig
+import com.iamsdt.movienewsv3.BuildConfig
 
 /**
  * Created by Shudipto on 6/11/2017.
@@ -14,7 +14,7 @@ class DBHelper (context: Context) :
         SQLiteOpenHelper(context,"MOVIES.db", null, 1) {
 
 
-    val entry = DataContract()
+    private val entry = DataContract()
 
     override fun onCreate(db: SQLiteDatabase?) {
 

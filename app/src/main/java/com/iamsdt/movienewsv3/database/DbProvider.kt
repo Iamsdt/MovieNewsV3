@@ -15,20 +15,20 @@ import android.net.Uri
 
 class DbProvider : ContentProvider() {
 
-    var mHelper: DBHelper? = null
+    private var mHelper: DBHelper? = null
 
-    val Entry = DataContract()
+    private val Entry = DataContract()
 
     //use to get all data from this path
-    val MOVIES: Int = 100
+    private val MOVIES: Int = 100
     //use to get single data from a single row
-    val MOVIES_WITH_ID: Int = 101
+    private val MOVIES_WITH_ID: Int = 101
 
     //first we check our uri
-    val sUriMatcher: UriMatcher = matcher()
+    private val sUriMatcher: UriMatcher = matcher()
 
     //uri matcher that's check uri and match type
-    fun matcher(): UriMatcher {
+    private fun matcher(): UriMatcher {
 
         // Initialize a UriMatcher with no matches by passing in NO_MATCH
         // to the constructor
