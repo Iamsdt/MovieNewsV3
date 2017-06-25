@@ -28,8 +28,13 @@ class MyAdapter constructor(context:Context,clickListener:ClickListener) :
         this.clickListener = clickListener
     }
 
-    override fun onBindViewHolder(viewHolder: MyViewHolder?, p1: Int) {
-        viewHolder!!.imageView
+    override fun onBindViewHolder(viewHolder: MyViewHolder?, position: Int) {
+
+        mCursor!!.moveToPosition(position)
+
+        //todo change poster index
+        val  poster_path:String = mCursor!!.getString(0)
+
     }
 
     override fun getItemCount(): Int {
