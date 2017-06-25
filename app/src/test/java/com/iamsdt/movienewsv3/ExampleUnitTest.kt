@@ -1,4 +1,4 @@
-package com.blogspot.shudiptotrafder.movienewsv3
+package com.iamsdt.movienewsv3
 
 import org.junit.Test
 

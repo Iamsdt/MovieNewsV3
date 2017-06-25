@@ -1,4 +1,4 @@
-package com.blogspot.shudiptotrafder.movienewsv3
+package com.iamsdt.movienewsv3
 
 import android.os.Bundle
 import android.support.design.widget.FloatingActionButton

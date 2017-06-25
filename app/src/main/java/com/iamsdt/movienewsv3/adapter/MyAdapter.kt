@@ -1,4 +1,4 @@
-package com.blogspot.shudiptotrafder.movienewsv3.adapter
+package com.iamsdt.movienewsv3.adapter
 
 import android.content.Context
 import android.database.Cursor
@@ -8,7 +8,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import com.blogspot.shudiptotrafder.movienewsv3.R
+import com.iamsdt.movienewsv3.R
+import com.squareup.picasso.Picasso
+
 
 /**
  * Created by Shudipto on 6/11/2017.
@@ -33,7 +35,9 @@ class MyAdapter constructor(context:Context,clickListener:ClickListener) :
         mCursor!!.moveToPosition(position)
 
         //todo change poster index
-        val  poster_path:String = mCursor!!.getString(0)
+        val  poster_path:String = "http://image.tmdb.org/t/p/w185/${mCursor!!.getString(0)}"
+
+        Picasso.with(mContext).load(poster_path).fit().into(viewHolder!!.imageView)
 
     }
 

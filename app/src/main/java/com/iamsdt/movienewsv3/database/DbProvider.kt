@@ -1,4 +1,4 @@
-package com.blogspot.shudiptotrafder.movienewsv3.database
+package com.iamsdt.movienewsv3.database
 
 import android.content.ContentProvider
 import android.content.ContentUris
